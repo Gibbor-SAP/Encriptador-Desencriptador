@@ -1,0 +1,207 @@
+.logo{
+    position: absolute;
+    left: 6.67%;
+    right: 37.43%;
+    top: 6%;
+    bottom: 0%;
+}
+
+body{
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background: #F3F5FC;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#txtarea1{
+    background: #F3F5FC;
+
+    position: absolute;
+    width: 577px;
+    height: 48px;
+    left: 240px;
+    top: 168px;
+
+    border: none;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+
+    color: darkblue;
+
+}
+
+.rectangulo1{
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+
+    background: white;
+
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.muñeco{
+    position: absolute;
+    width: 336px;
+    height: 304px;
+    left: 34px;
+    top: 283px;
+}
+
+#txtarea2{
+    position: absolute;
+    width: 336px;
+    height: 781px;
+    left: 30px;
+    top: 72px;
+
+    border: none;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+
+    color: gray;
+}
+
+.mensaje{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+
+    position: absolute;
+    width: 336px;
+    height: 122px;
+    left: 1032px;
+    top: 619px;
+
+}
+
+.signoAdmiracion{
+    width: 16px;
+    height: 16px;
+    
+    position: absolute;
+    left: 17%;
+    right: 0%;
+    top: 82.7%;
+    bottom: 0%;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+h6{
+    width: 270px;
+    height: 18px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+
+    color: #495057;
+
+    opacity: 0.8;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    
+    position: absolute;
+    left: 19%;
+    right: 0%;
+    top: 80%;
+    bottom: 0%;
+
+}
+
+.btnFrame{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 240px;
+    top: 885px;
+
+}
+
+.botonE{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    width: 328px;
+    height: 67px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    background: #0A3871;
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.botonD{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    width: 280px;
+    height: 67px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    /* Dark blue/dark-blue-300 */
+
+    color: #0A3871;
+    border-radius: 24px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+.copyright{
+    position: absolute;
+    top: 95%;
+    left: 50%;
+}
+
+

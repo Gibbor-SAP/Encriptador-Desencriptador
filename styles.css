@@ -28,8 +28,8 @@ body{
     height: 48px;
     left: 240px;
     top: 168px;
-    background: #F3F5FC;background: ;
-
+    background: #F3F5FC;
+    
     /* Estilo de la fuente */
     font-family: "Inter";
     font-style: normal;
@@ -82,7 +82,7 @@ body{
 
 .botonC{
     box-sizing: border-box;
-    display: flex;
+    display: none;
     justify-content: center;
     flex-direction: row;
     align-items: flex-start;

@@ -1,73 +1,78 @@
-.logo{
-    position: absolute;
-    left: 6.67%;
-    right: 37.43%;
-    top: 6%;
-    bottom: 0%;
-}
-
 body{
     font-family: 'Inter';
-    position: relative;
-    width: 1440px;
-    height: 1024px;
-    background: #F3F5FC;
+    position: absolute;
+    background: #FFFFFF;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-#txtarea1{
+.contenedor{
+    width: 1440px;
+    height: 1024px;
     background: #F3F5FC;
+}
 
+.logo{
+    display: flex;
+    width: 120px;
+    height: 48px;
+    float: left;
+    left: 6%;
+    padding: 1%;
+    top: 40px;
+}
+
+
+#txt-mensaje{
     position: absolute;
     width: 577px;
     height: 48px;
     left: 240px;
     top: 168px;
+    background: #F3F5FC;background: ;
 
-    border: none;
-
-    font-family: 'Inter';
+    /* Estilo de la fuente */
+    font-family: "Inter";
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
+    color: #0A3871;
 
-    color: darkblue;
-
+    border: none; /* Quitar borde */
+    outline: none; /* Quitar borde exterior al seleccionar */
 }
 
-.rectangulo1{
+.caja-derecha{
     position: absolute;
     width: 400px;
     height: 944px;
     left: 1000px;
     top: 40px;
-
-    background: white;
-
+    background: #FFFFFF;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
 }
 
-#txtarea2{
+#txt-encriptado{
     position: absolute;
     width: 336px;
     height: 781px;
-    left: 30px;
-    top: 72px;
+    left: 32px;
+    top: 44px;
+    background: #FFFFFF;
 
-    border: none;
-
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 150%;
+    color: #495057;
 
-    color: darkblue;
+    border: none;
+    outline: none;
 }
 
-.muñeco{
+#munieco{
     position: absolute;
     width: 336px;
     height: 304px;
@@ -77,9 +82,6 @@ body{
 
 .botonC{
     box-sizing: border-box;
-
-/* Auto layout */
-
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -99,14 +101,21 @@ body{
     font-size: 16px;
     line-height: 19px;
     
-/* Dark blue/dark-blue-300 */
-
     border: 1px solid #0A3871;
     border-radius: 24px;
 }
 
-.mensaje{
-   display: block;
+#btn-copiar:hover{
+    cursor: pointer;
+}
+
+#btn-copiar:active{
+    background: #0A3871;
+    color: #F3F5FC;
+}
+
+#mensaje{
+    display: block;
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
@@ -119,53 +128,46 @@ body{
     top: 619px;
 }
 
-.mensaje h3{
-    width: 336px;
-    height: 58px;
-
+#mensaje h3{  
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 120%;
-
     text-align: center;
-
+    
+    width: 336px;
+    height: 58px;
     flex: none;
     order: 0;
     align-self: stretch;
     flex-grow: 0;
 } 
 
-.mensaje h5{
-    width: 336px;
-    height: 48px;
-
+#mensaje h5{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 150%;
-
+    line-height: 150%;    
     text-align: center;
-
+    
+    height: 48px;
+    width: 336px;
     flex: none;
     order: 1;
     align-self: stretch;
     flex-grow: 0;
 }
 
-
-.signoAdmiracion{
+.img-advertencia{
     width: 16px;
     height: 16px;
-    
     position: absolute;
     left: 17%;
     right: 0%;
     top: 82.7%;
     bottom: 0%;
-    
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -174,29 +176,27 @@ body{
 h6{
     width: 270px;
     height: 18px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 150%;
-
-    color: #495057;
-
-    opacity: 0.8;
-
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    
     position: absolute;
     left: 19%;
     right: 0%;
     top: 80%;
     bottom: 0%;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+    
+    opacity: 0.8;
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
 }
 
-.btnFrame{
+.botonera{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -210,16 +210,15 @@ h6{
     top: 885px;
 }
 
-.botonE{
+#btn-encriptar{
+    width: 328px;
+    height: 67px;
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: flex-start;
     padding: 24px;
     gap: 8px;
-
-    width: 328px;
-    height: 67px;
 
     font-family: 'Inter';
     font-style: normal;
@@ -235,15 +234,24 @@ h6{
     flex-grow: 0;
 }
 
-.botonD{
+#btn-encriptar:hover{
+    cursor: pointer;
+}
+
+#btn-encriptar:active{
+    background: #F3F5FC;
+    color: #0A3871;
+}
+
+#btn-desencriptar{
+    width: 280px;
+    height: 67px;
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: flex-start;
     padding: 24px;
     gap: 8px;
-    width: 280px;
-    height: 67px;
 
     font-family: 'Inter';
     font-style: normal;
@@ -252,16 +260,21 @@ h6{
     line-height: 19px;
     text-align: center;
     
-    /* Dark blue/dark-blue-300 */
-
     color: #0A3871;
     border-radius: 24px;
-
-    /* Inside auto layout */
 
     flex: none;
     order: 0;
     flex-grow: 1;
+}
+
+#btn-desencriptar:hover{
+    cursor: pointer;
+}
+
+#btn-desencriptar:active{
+    background: #0A3871;
+    color: #F3F5FC;
 }
 
 .copyright{

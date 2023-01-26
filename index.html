@@ -5,48 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de Alura</title>
+    <script type="text/javascript" src="funciones.js"></script>
     <link rel="stylsheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <img src="recursos/Vectorlogo.png" alt="logo de Alura" class="logo">
+   
 </head>
 
 <body>   
     
-    <section class="contenedor">    
-
-        <textarea name="" id="txtarea1" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
-       
-        <div class="rectangulo1">
-            <textarea name="" id="txtarea2" cols="30" rows="10"></textarea>
-            <img src="recursos/MuñecoimgBusqueda.png" alt="" class="muñeco">
-            <input type="button" value="Copiar" class="botonC">
+    <section class="contenedor"> 
+        
+        <div class="logo">
+             <img src="recursos/Vectorlogo.png"  alt="logo de Alura" >
         </div>
 
-        <div class="mensaje"> 
+        <textarea id="txt-mensaje" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+       
+        <div class="caja-derecha">
+            <textarea id="txt-encriptado" cols="30" rows="10"></textarea>
+            <img src="recursos/MuñecoimgBusqueda.png" id="munieco" alt="">
+            <input type="button" value="Copiar" class="botonC" id="btn-copiar">
+        </div>
+        <div id="mensaje"> 
             <p>
                 <h3><strong>Ningún mensaje fue encontrado</strong></h3>
                 <h5>Ingresa el texto que desees encriptar o desencriptar</h5>
             </p>   
         </div>
-
-        <img src="recursos/Vectoradmiracion.png" class="signoAdmiracion" alt="">
-        <h6>Solo letras minúsculas y sin acentos</h6>
-       
-        <div class="btnFrame">
-            <input type="button" value="Encriptar" class="botonE">
-            <input type="button" value="Desencriptar" class="botonD">
+        <div id="advertencia">            
+            <img src="recursos/Vectoradmiracion.png" class="img-advertencia" alt="Signo de admiración o advertencia">
+            <h6>Solo letras minúsculas y sin acentos</h6>
+       </div>
+        <div class="botonera">
+            <input type="button" value="Encriptar" id="btn-encriptar" onclick="encriptar()">
+            <input type="button" value="Desencriptar" id="btn-desencriptar">
         </div> 
 
     </section>
 
     <footer>
-        <p class="copyright">&copy Sebastian A. Paredes</p>
+        <p class="copyright">&copy Alura Latam | Sebastian A. Paredes</p>
     </footer>
 
 </body>
-
 
 </html>

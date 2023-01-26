@@ -37,9 +37,8 @@ function desencriptar(){
     document.getElementById("txt-encriptado").innerHTML= txtEncriptado;
 }
 
-/* function copiar{
-    var msj = document.querySelector("#txt-codificado");
-    msj.selec
-
+function copiar(){
+    const texto = document.querySelector("#txt-encriptado");
+   texto.select();
+   document.execCommand("copy");
 }
- */
